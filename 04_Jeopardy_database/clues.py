@@ -2,7 +2,7 @@
 import sqlite3
 from html.parser import HTMLParser
 
-connection = sqlite3.connect("jeopardy.db")
+connection = sqlite3.connect("./data/jeopardy.db")
 cursor = connection.cursor()
 cursor.execute("SELECT text, answer, value FROM clue LIMIT 10;")
 results = cursor.fetchall()

@@ -2,7 +2,7 @@
 import sqlite3
 from html.parser import HTMLParser
 
-connection = sqlite3.connect("jeopardy.db")
+connection = sqlite3.connect("./data/jeopardy.db")
 cursor = connection.cursor()
 
 query_1 = """SELECT id, name 

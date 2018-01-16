@@ -1,8 +1,8 @@
 # O(m*n)
 import time
 
-my_words = [elem.strip() for elem in open("sonnet_words.txt", "r").readlines()]
-word_list = [elem.strip() for elem in open("sowpods.txt", "r").readlines()]
+my_words = [elem.strip() for elem in open("./data/sonnet_words.txt", "r").readlines()]
+word_list = [elem.strip() for elem in open("./data/sowpods.txt", "r").readlines()]
 
 counter = 0
 

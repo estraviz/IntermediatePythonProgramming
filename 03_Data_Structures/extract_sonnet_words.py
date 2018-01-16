@@ -1,7 +1,7 @@
 import string
 
-sonnets = open("sonnets.txt").readlines()
-word_set = set([elem.strip() for elem in open("sowpods.txt")])
+sonnets = open("./data/sonnets.txt").readlines()
+word_set = set([elem.strip() for elem in open("./data/sowpods.txt")])
 sonnet_words = set()
 
 def strip_punctuation(word):
@@ -28,7 +28,7 @@ for line in sonnets:
 sonnet_words = list(sonnet_words)
 sonnet_words.sort()
 
-f = open("sonnet_words.txt", "w")
+f = open("./data/sonnet_words.txt", "w")
 for word in sonnet_words:
     f.write(word + "\n")
 f.close()
